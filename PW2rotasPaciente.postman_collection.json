@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "81242fd3-4518-4511-b2cb-5ec8b3436e3b",
+		"name": "PW2rotasPaciente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26212227"
+	},
+	"item": [
+		{
+			"name": "paciente/inserir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome_paciente",
+							"value": "Gean Euflausino",
+							"type": "text"
+						},
+						{
+							"key": "email_paciente",
+							"value": "alexrtavares55@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "telefone_paciente",
+							"value": "4002-8922",
+							"type": "text"
+						},
+						{
+							"key": "celular_paciente",
+							"value": "55 11 98185-3569",
+							"type": "text"
+						},
+						{
+							"key": "foto_paciente",
+							"type": "file",
+							"src": "/C:/Users/Etec/Downloads/whatsapp-image-2023-02-05-at-11.36.17.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url_base}}/paciente/inserir",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"paciente",
+						"inserir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paciente/selecionar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_base}}/paciente/selecionar",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"paciente",
+						"selecionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paciente/alterar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "name_Patient",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email_Patient",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "phone_Patient",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "cellphone_Patient",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "picture_Patient",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "name_Relative",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "phone_Relative",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url_base}}/paciente/alterar",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"paciente",
+						"alterar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paciente/deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_base}}/paciente/excluir/",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"paciente",
+						"excluir",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
